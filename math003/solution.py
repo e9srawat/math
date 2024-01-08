@@ -26,3 +26,9 @@ def solver(value):
 def answer():
     """Returns the largest prime favtor for 600851475143"""
     return solver(600851475143)
+
+if __name__ == "__main__": 
+    print("Math003") 
+    print("answer() =",answer())
+    print("solver(2345613567) =",solver(2345613567))
+    print("\n")

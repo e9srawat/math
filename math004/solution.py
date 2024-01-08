@@ -16,7 +16,6 @@ def solver(n, p=None, q=None):
         for j in reversed(range(p, i + 1)):
             product = i * j
             if str(product) == "".join(reversed(str(product))) and product > palindrome:
-                print(i, j)
                 palindrome = product
     return palindrome
 
@@ -25,3 +24,9 @@ def answer():
     """returns largest palindrome form the product of two 3 digit numbers between 100 and 999"""
     palindrome = solver(3, 100, 999)
     return palindrome
+
+if __name__ == "__main__": 
+    print("Math004") 
+    print("answer() =",answer())
+    print("solver(4, 2000, 5000) =",solver(4, 2000, 5000))
+    print("\n")

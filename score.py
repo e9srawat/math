@@ -1,11 +1,12 @@
-# Now you can import the functions from solution.py
-from math001.solution import answer as answer1
-from math001.solution import solver as solver1
-
-# Call the functions
-result_answer = answer1()
+import os
 
 
-# Do something with the results if needed
-print("Result from answer():", result_answer)
 
+path = sorted(os.listdir())
+print(path)
+for i in path:
+    path = os.path.join(i, "solution.py")
+    print(path)
+    if "math" in path:
+        os.system("python3 " + path)
+        print()
