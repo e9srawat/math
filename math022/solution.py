@@ -56,7 +56,7 @@ def solver(names: str):
 
 
 if __name__ == "__main__":
-    print("Math021")
+    print("Math022")
     print("answer() =", answer())
     print("solver('math022/names.txt') =", solver("math022/names.txt"))
     print("\n")
