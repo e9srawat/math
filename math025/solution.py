@@ -39,5 +39,5 @@ def solver(n):
 if __name__ == "__main__":
     print("Math025")
     print("answer() =", answer())
-    print("solver('100') =", solver(500))
+    print("solver('500') =", solver(500))
     print("\n")
