@@ -10,11 +10,9 @@ def get_combinations(digits, current="", combinations=None):
         combinations.append(current)
         return combinations
 
-    for i in range(len(digits)):
+    for i, j in enumerate(digits):
         remaining_digits = digits[:i] + digits[i + 1 :]
-        combinations = get_combinations(
-            remaining_digits, current + digits[i], combinations
-        )
+        combinations = get_combinations(remaining_digits, current + j, combinations)
 
     return combinations
 
@@ -30,8 +28,8 @@ def check(num):
         num[6:9]: 13,
         num[7:10]: 17,
     }
-    for i in dicn:
-        if int(i) % dicn[i] != 0:
+    for i, j in dicn.items():
+        if int(i) % j != 0:
             return False
     return True
 
