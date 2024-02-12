@@ -1,12 +1,10 @@
 import os
 
-
-
 path = sorted(os.listdir())
-print(path)
+cont = 1
 for i in path:
     path = os.path.join(i, "solution.py")
-    print(path)
     if "math" in path:
-        os.system("python3 " + path)
-        print()
+        print(cont)
+        os.system("pylint " + path)
+        cont+=1

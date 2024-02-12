@@ -28,8 +28,12 @@ def answer():
     """sum of Fibonacci sequence whose values smaller than 4000000"""
     return solver(start=1, end=4000000, even=True, odd=False)
 
-if __name__ == "__main__": 
-    print("Math002") 
-    print("answer() =",answer())
-    print("solver(start=20000, end=4000000, even=True, odd=False) =",solver(start=20000, end=4000000, even=True, odd=False))
+
+if __name__ == "__main__":
+    print("Math002")
+    print("answer() =", answer())
+    print(
+        "solver(start=20000, end=4000000, even=True, odd=False) =",
+        solver(start=20000, end=4000000, even=True, odd=False),
+    )
     print("\n")

@@ -25,8 +25,9 @@ def answer():
     palindrome = solver(3, 100, 999)
     return palindrome
 
-if __name__ == "__main__": 
-    print("Math004") 
-    print("answer() =",answer())
-    print("solver(4, 2000, 5000) =",solver(4, 2000, 5000))
+
+if __name__ == "__main__":
+    print("Math004")
+    print("answer() =", answer())
+    print("solver(4, 2000, 5000) =", solver(4, 2000, 5000))
     print("\n")

@@ -1,6 +1,7 @@
 """
 Math 012
 """
+
 import math
 
 
@@ -30,8 +31,9 @@ def solver(n):
             break
     return tri_num
 
+
 if __name__ == "__main__":
-    print("Math012") 
-    print("answer() =",answer())
-    print("solver(700) =",solver(700))
-    print('\n')
+    print("Math012")
+    print("answer() =", answer())
+    print("solver(700) =", solver(700))
+    print("\n")

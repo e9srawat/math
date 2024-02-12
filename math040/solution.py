@@ -1,7 +1,8 @@
-'''Champernowne's Constant'''
+"""Champernowne's Constant"""
+
 
 def answer():
-    '''answer function'''
+    """answer function"""
     string = ""
     for i in range(1, 1000001):
         string += str(i)

@@ -20,7 +20,7 @@ def common_cancel(num1, num2):
     """solves fractions the wrong way"""
     num1 = list(str(num1))
     num2 = list(str(num2))
-    for i in num1:
+    for i in num1.copy():
         if i in num2:
             index1 = num1.index(i)
             index2 = num2.index(i)

@@ -21,12 +21,12 @@ def is_pandigital(num):
 
 def answer():
     """answer function"""
-    prime = 0
-    primes = [i for i in range(11, 10000000, 2) if is_prime(i)]
-    for i in primes:
+    primes = [i for i in range(7000000, 8000000) if is_prime(i)]
+    for i in primes[::-1]:
         if is_pandigital(i):
-            prime = i
-    return prime
+            return i
+    return None
+
 
 if __name__ == "__main__":
     print("Math041")

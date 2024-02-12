@@ -1,6 +1,7 @@
 """
 Amicable Numbers
 """
+
 import math
 
 
@@ -30,8 +31,9 @@ def solver(p: int, q: int):
             ami.append(factors(i))
     return sum(ami)
 
+
 if __name__ == "__main__":
     print("Math021")
     print("answer() =", answer())
-    print("solver(1,1000) =", solver(1,100000))
+    print("solver(1,1000) =", solver(1, 100000))
     print("\n")

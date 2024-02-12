@@ -1,4 +1,5 @@
 """solver function"""
+
 import math
 
 
@@ -28,8 +29,9 @@ def answer():
     """Returns sum of prime numbers till 2000000"""
     return solver(2000000)
 
-if __name__ == "__main__": 
-    print("Math010") 
-    print("answer() =",answer())
-    print("solver(200000) =",solver(200000))
+
+if __name__ == "__main__":
+    print("Math010")
+    print("answer() =", answer())
+    print("solver(200000) =", solver(200000))
     print("\n")

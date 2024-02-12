@@ -26,8 +26,9 @@ def answer():
     """lcm from range 1-20"""
     return solver(1, 20)
 
-if __name__ == "__main__": 
-    print("Math005") 
-    print("answer() =",answer())
-    print("solver(20, 50) =",solver(20, 50))
+
+if __name__ == "__main__":
+    print("Math005")
+    print("answer() =", answer())
+    print("solver(20, 50) =", solver(20, 50))
     print("\n")

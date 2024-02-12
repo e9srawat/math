@@ -14,17 +14,17 @@ def is_prime(num):
 
 
 def primes(n):
-    '''returns a list of primes till n'''
+    """returns a list of primes till n"""
     return [i for i in range(2, n + 1) if is_prime(i)]
 
 
 def rotato(num):
-    '''rotates the number'''
+    """rotates the number"""
     return [str(num)[j:] + str(num)[:j] for j in range(1, len(str(num)))]
 
 
 def answer():
-    '''returns circular primes are there below one million'''
+    """returns circular primes are there below one million"""
     prime = primes(1000000)
     lest = []
     for i in prime:

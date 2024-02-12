@@ -1,6 +1,7 @@
 """
 Lexicographic Permutations
 """
+
 import math
 
 

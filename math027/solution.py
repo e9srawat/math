@@ -1,6 +1,7 @@
 """
 Quadratic Primes
 """
+
 import math
 
 

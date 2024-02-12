@@ -20,13 +20,13 @@ def get_den(n):
 
 
 def answer():
-    """returns the value of d<1000 for which 1/d contains 
+    """returns the value of d<1000 for which 1/d contains
     the longest recurring cycle in its decimal fraction part"""
     return solver(1000, [])
 
 
 def solver(n, lst: []):
-    """returns the value of d/n for which 1/n contains all the 
+    """returns the value of d/n for which 1/n contains all the
     digits in the provided list in the recurring cycle in its decimal fraction part."""
     mx = 0
     mx_index = 0

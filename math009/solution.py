@@ -1,6 +1,7 @@
 """
 return dictionary of list of tuples
 """
+
 import math
 
 
@@ -30,9 +31,9 @@ def answer():
     result = solver(1000, 1000)
     return result
 
-if __name__ == "__main__": 
-    print("Math009") 
-    print("answer() =",answer())
-    print("solver(10000,10000) =",solver(10000,10000))
-    print("\n")
 
+if __name__ == "__main__":
+    print("Math009")
+    print("answer() =", answer())
+    print("solver(10000,10000) =", solver(10000, 10000))
+    print("\n")

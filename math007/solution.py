@@ -1,4 +1,5 @@
 """finds nth prime number"""
+
 import math
 
 
@@ -27,8 +28,9 @@ def answer():
     """finds 10001th prime number"""
     return solver(10001)
 
-if __name__ == "__main__": 
-    print("Math007") 
-    print("answer() =",answer())
-    print("solver(100001) =",solver(100001))
+
+if __name__ == "__main__":
+    print("Math007")
+    print("answer() =", answer())
+    print("solver(100001) =", solver(100001))
     print("\n")

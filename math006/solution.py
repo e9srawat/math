@@ -20,8 +20,9 @@ def answer():
     """Returns the difference between the sum and squares of sum between range 1 and 100"""
     return solver(1, 100)
 
-if __name__ == "__main__": 
-    print("Math006") 
-    print("answer() =",answer())
-    print("solver(200, 500) =",solver(200, 500))
+
+if __name__ == "__main__":
+    print("Math006")
+    print("answer() =", answer())
+    print("solver(200, 500) =", solver(200, 500))
     print("\n")

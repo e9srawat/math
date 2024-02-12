@@ -1,4 +1,5 @@
 """solver module"""
+
 import math
 
 
@@ -82,7 +83,8 @@ def diag_rl(grid, n):
             product = max(product, math.prod(lst))
     return product
 
-grid_num = """08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
+
+GRID = """08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
 81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
 52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91
@@ -102,16 +104,19 @@ grid_num = """08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16
 20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48"""
+
+
 def answer():
     """
     Return the greatest product of 4 adjacent numbers
     in the any direction
     """
-    
-    return solver(grid_num, 4)
 
-if __name__ == "__main__": 
-    print("Math011") 
-    print("answer() =",answer())
-    print("solver(grid_num,6) =",solver(grid_num,6))
+    return solver(GRID, 4)
+
+
+if __name__ == "__main__":
+    print("Math011")
+    print("answer() =", answer())
+    print("solver(GRID,6) =", solver(GRID, 6))
     print("\n")

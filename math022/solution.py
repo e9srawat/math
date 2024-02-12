@@ -40,7 +40,7 @@ def solver(names: str):
         "Y": 25,
         "Z": 26,
     }
-    with open(names, "r",encoding="utf-8") as file1:
+    with open(names, "r", encoding="utf-8") as file1:
         reader = file1.read()
     lst = sorted(reader.split(","))
     result = 0
