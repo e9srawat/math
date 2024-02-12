@@ -2,7 +2,7 @@
 
 
 def penta_gen(num):
-    """generates pentagonal numbers till num"""
+    """generates num pentagonal numbers"""
     penta = []
     starter = 1
     while len(penta) != num:
@@ -19,7 +19,7 @@ def answer():
         for j in visited:
             pentas_sum = i + j
             pentas_diff = i - j
-            if pentas_sum in pentas and pentas_diff in pentas:
+            if pentas_sum in pentas and pentas_diff in visited:
                 return (i, j)
         visited.append(i)
     return None

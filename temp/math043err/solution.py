@@ -19,6 +19,6 @@ def get_digit_combinations(number):
     
     return digit_permutations
 
-number = 1234
+number = 123456789
 result = get_digit_combinations(number)
 print(result)

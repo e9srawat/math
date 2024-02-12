@@ -11,30 +11,16 @@ def is_prime(num):
     return True
 
 
-def prime_til_n(num):
-    """returns prime numbers till num"""
-    dicn = {i: "not prime" for i in range(1, num + 1)}
-    for i in dicn:
-        if is_prime(i):
-            dicn[i] = "prime"
-    lst = [i for i in dicn if dicn[i] == "prime"]
-    return lst
-
-
 def answer():
     """answer function"""
-    primes = prime_til_n(1000000)
+    primes = [i for i in range(1, 1000001) if is_prime(i)]
     prime_list = [i for i in primes if i > 1000]
-    print(prime_list)
-    k = 997651
     for i in primes:
         addr = [i]
         for j in primes[primes.index(i) + 1 :]:
             addr.append(j)
-            if sum(addr) == k:
-                return addr
-            if sum(addr) > k:
-                break
+            if sum(addr) in prime_list:
+                return sum(addr)
     return None
 
 
