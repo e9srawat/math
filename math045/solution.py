@@ -19,7 +19,7 @@ def answer():
     pentagons = pentagon(100000)
     hexagons = hexagon(100000)
     lst = [i for i in hexagons if i in pentagons]
-    return lst[0]
+    return lst
 
 
 if __name__ == "__main__":
