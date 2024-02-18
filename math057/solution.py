@@ -28,3 +28,7 @@ def answer():
             lst.append(fraction)
         den = fraction_f("2", f"1/{den}")
     return len(lst)
+
+if __name__ == "__main__":
+    print("Math057")
+    print("answer() =", answer(), "\n")

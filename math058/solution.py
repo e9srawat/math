@@ -15,7 +15,7 @@ def is_prime(n):
     return True
 
 
-def asnswer():
+def answer():
     """
     answer function
     """
@@ -39,3 +39,8 @@ def asnswer():
         loop += 1
         if int((primen / total) * 100) < 10:
             return loop * 2 + 1
+
+
+if __name__ == "__main__":
+    print("Math058")
+    print("answer() =", answer(), "\n")

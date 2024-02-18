@@ -1,6 +1,8 @@
 """
 Maximum Path Sum II
 """
+
+
 def solver(n):
     """returns maximum total from top to bottom
     of the triangle of variable height"""
@@ -13,12 +15,16 @@ def solver(n):
             intn[i][j] += max(intn[i + 1][j], intn[i + 1][j + 1])
     return intn[0][0]
 
+
 def answer():
     """
     answer function
     """
-    with open('triangle.txt', "r", encoding="utf-8") as f:
+    with open("triangle.txt", "r", encoding="utf-8") as f:
         data = f.read()
     return solver(data)
 
-print(answer())
+
+if __name__ == "__main__":
+    print("Math067")
+    print("answer() =", answer(), "\n")
